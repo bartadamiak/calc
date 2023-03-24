@@ -29,12 +29,39 @@ btns.forEach(element => {
 
         if (element.dataset.equal) {
             emptyTab.push(actualNum);
-                     
+
+            // let resultTab = emptyTab.map(function(element) {
+            //     if (element == "+" || element == "-" || element == "*" || element == "/") {
+            //         return element
+            //     }
+            //     else {
+            //         return parseInt(element)
+            //     }
+            // })
+
+
+
+
+
+            // console.log(resultTab)
+
+
+
+
+            // emptyTab.forEach(element => {
+            //     console.log(element)
+            // });
+
             let result = emptyTab.join(" ");
-            
+
             console.log(result)
+
+            const replaced = result.replace(/[0-9]/g, '!');
+            console.log(replaced); 
+
         }
 
 
     })
 });
+
